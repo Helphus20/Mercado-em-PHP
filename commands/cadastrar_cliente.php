@@ -1,6 +1,7 @@
 <?php
 
 require_once __DIR__ . '/../config/Connection.php';
+require_once __DIR__ . '/../config/Segredos.php';
 require_once __DIR__ . '/../src/Cliente.php';
 
 use Mercado\Connection;
