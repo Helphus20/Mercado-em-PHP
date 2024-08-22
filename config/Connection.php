@@ -26,7 +26,7 @@ class Connection{
             $dsn = "pgsql:host=" . $host . ";port=" . $port . ";dbname=" . $dbname;
             $this->conn = new PDO($dsn, $username, $password);//conn realiza a conexão através da classa PDO
             $this->conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-            echo("conexão estabelecida\n");
+            //echo("conexão estabelecida\n");
         } catch (PDOException $e) {//caso exista algum erro, PDOException o exibe
             echo"Erro de conexão: \n" . $e->getMessage();
         }

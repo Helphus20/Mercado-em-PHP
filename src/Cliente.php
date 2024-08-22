@@ -43,7 +43,7 @@ class Cliente{
     }
 
     public function excluirCliente($id){
-        echo "Deletando Cliente...";
+        echo "Deletando Cliente...\n";
         $sql = "DELETE FROM ". $this->table . " WHERE id = :id";
 
         //usando Prepared Statement para proteger contra sql injection
